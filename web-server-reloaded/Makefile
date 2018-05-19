@@ -1,0 +1,2 @@
+serve:
+	clj -m start

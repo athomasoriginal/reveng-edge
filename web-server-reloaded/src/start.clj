@@ -1,5 +1,5 @@
 (ns start
-  "Start the web-server app w/ reloaded workflow"
+  "Start the web server app w/ reloaded workflow"
   (:require
     [clojure.tools.logging :as log]
     [system :as system]
