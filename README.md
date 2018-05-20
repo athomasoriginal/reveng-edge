@@ -21,7 +21,7 @@ This project aims to breakdown and discuss the different parts of the [Edge](htt
 
 **What this project is not**
 
-This project will not teach you how to use the libraries. I will provide context, explain them a little and provide some alternatives. However, teaching each of them is not the goal.
+This project will not teach you how to use the libraries. I will provide context, explain them a little and provide some alternatives. However, teaching each of them is not the goal. Further, I not go into implementation details. For example, I will not breakdown the authentication system illustrated in Edge. In my mind, they have done an excellent job of that.
 
 ## Learning Path
 
@@ -30,3 +30,4 @@ I would recommend reading through this project in the following order:
 * [Web Server](https://github.com/tkjone/reveng-edge/tree/master/web-server)
 * [Web Server Reloaded](https://github.com/tkjone/reveng-edge/tree/master/web-server-reloaded)
 * [Web Server Templates](https://github.com/tkjone/reveng-edge/tree/master/web-server-reloaded)
+* [Web Server API](https://github.com/tkjone/reveng-edge/tree/master/web-server-api)
