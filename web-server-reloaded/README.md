@@ -1,14 +1,13 @@
 # Web Server Reloaded
 
-Where web-server]() illustrated how to start a system based web-server, this is the next iteration. We focus on adding the [reloaded-workflow](http://thinkrelevance.com/blog/2013/06/04/clojure-workflow-reloaded). The majority of the changes to make this happen can be found in `dev` and the `deps.edn` file.
+[web-server](https://github.com/tkjone/reveng-edge/tree/master/web-server) illustrated how to start a system based web-server. In this project, we focus on adding the [reloaded-workflow](http://thinkrelevance.com/blog/2013/06/04/clojure-workflow-reloaded). The majority of the changes we make to this can be found in `dev` and the `deps.edn` file.
 
-As with web-server, I have diverged a little from Edge full reloaded workflow to make it easier to understand how it fits in. Areas of divergence:
+I have diverged a little from Edge full reloaded workflow to make it easier to understand how it fits in. Areas of divergence:
 
 * graphql
 * tests
 * manifold
-
-See the sections below for a deeper breakdown of how reloaded works.
+* project organization
 
 ## Quick Start
 
@@ -76,11 +75,11 @@ As I mentioned, I pretty much just extracted the Edge reloaded workflow and did 
   deps.edn (1) --> user.clj (2) --> nrepl.clj (3) --> edge.rebel.main (4) --> dev.clj (5)
   ```
 
-  1.  [deps.edn](https://github.com/juxt/edge/blob/master/app/deps.edn) specifically, they are running `:dev`, `build`, `:dev/rebel`, `:dev/nrepl` and `:dev/cljs`. Things to keep in mind is that running these expands whats on the classpath. This expansion is what allows `user.clj` and `:dev/nrepl` to be called and do their thing (read points 2 and 3) and than start the main repl script (read point 4)
-  2.  [user.clj](https://github.com/juxt/edge/blob/master/app/dev/user.clj) is automatically imported when its on the classpath. So this guy just loads itself and in doing so requires `nrepl.clj`
-  3.  [nrepl](https://github.com/juxt/edge/blob/master/app/aliases/nrepl/nrepl.clj) automatically starts a `nrepl-server`. This automatic chain of events stops now.
-  4.  [edge.rebel.main](https://github.com/juxt/edge/blob/master/app/aliases/rebel/edge/rebel/main.clj) has a main function which, when called, requires the `dev.clj` ns and drops you into it. Which leads us to the next point.
-  5.  [dev.clj](https://github.com/juxt/edge/blob/master/app/dev/dev.clj) This ns starts by setting up integrant by passing it your `config.edn`.
+  * [deps.edn](https://github.com/juxt/edge/blob/master/app/deps.edn) specifically, they are running `:dev`, `build`, `:dev/rebel`, `:dev/nrepl` and `:dev/cljs`. Things to keep in mind is that running these expands whats on the classpath. This expansion is what allows `user.clj` and `:dev/nrepl` to be called and do their thing (read points 2 and 3) and than start the main repl script (read point 4)
+  * [user.clj](https://github.com/juxt/edge/blob/master/app/dev/user.clj) is automatically imported when its on the classpath. So this guy just loads itself and in doing so requires `nrepl.clj`
+  * [nrepl](https://github.com/juxt/edge/blob/master/app/aliases/nrepl/nrepl.clj) automatically starts a `nrepl-server`. This automatic chain of events stops now.
+  * [edge.rebel.main](https://github.com/juxt/edge/blob/master/app/aliases/rebel/edge/rebel/main.clj) has a main function which, when called, requires the `dev.clj` ns and drops you into it. Which leads us to the next point.
+  * [dev.clj](https://github.com/juxt/edge/blob/master/app/dev/dev.clj) This ns starts by setting up integrant by passing it your `config.edn`.
 
 At this point, you are ready to call `go`.
 
