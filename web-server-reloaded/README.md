@@ -9,6 +9,8 @@ I have diverged a little from Edge full reloaded workflow to make it easier to u
 * manifold
 * project organization
 
+You can see the exact changes in [this diff](https://github.com/tkjone/reveng-edge/commit/558bfa3c423aea755749ec8c7e315c93edd5475e)
+
 ## Quick Start
 
 * Install Clojure
