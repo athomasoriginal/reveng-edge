@@ -1,17 +1,29 @@
-* Make vs. bin/repl
+# Edge "Reverse Engineered"
 
-  `:dev:build`
+## Introduction
 
-  v.
+For newcomers to Clojure, one of the big questions is "How do I build a web app?". In Clojure, there are no frameworks like Django, Rails or Express. There are libraries which you piece together. Okay, so which libraries should I use and when? What are the best practices? How should I organize my code? To put it another way: What does a Clojure web app look like?
 
-  `serve`
+In answer to this, [Juxt](https://juxt.pro/index.html) created [Edge](https://github.com/juxt/edge). Edge is an example web app meant to show new Clojure developers what a modern, production ready Clojure app looks like. It illustrates:
 
-- For the above, they go through different routes to call the clojure file that is going to kick off the system. I actually like the feel of the `bridge` more. Its more to the point, less reliant on the `deps.edn` specifying what should be done. More straightforward path. In the end, bridge is saying, hey, if I have a clj tool, I will feed it the clojure file I want it to run directly. Kind of like a start script.
+* Web API
+* SSR
+* SPA
+* Graphl
+* Event System
+* Modern Workflow
 
-- Edge requires in `dev` to the `rebel.main` which is the script that actually provides the functions that are going to run the system. Not a bad separation.
+This is a great learning tool. But this learning tool also has a lot going on. For example, what if you only want to create a SPA? You need a server and some HTML. Do you really need everything else? Okay, so what, at a minimum do I need?
 
-- Edge provides out of the box for the reloaded workflow. Bridge does not even do this.
+**What this project is**
 
-- If your thinking its not that annoying to start and stop the server all the time, think again. Its very annoying, so the server thing we have going is actually very useful.
+This project aims to breakdown and discuss the different parts of the [Edge](https://github.com/juxt/edge) web app so you can better see exactly what you need, but also gain a greater appreciation for how Edge is working to piece together the Clojure ecosystem.
 
-- the logback file is where we control the logging configurations - turn them off of debug
+**What this project is not**
+
+This project will not teach you how to use the libraries. I will provide context, explain them a little and provide some alternatives. However, teaching each of them is not the goal.
+
+## Table of Contents
+
+* [Web Server]()
+* [Web Server Reloaded]()
