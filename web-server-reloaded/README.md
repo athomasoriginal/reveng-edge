@@ -75,9 +75,9 @@ As I mentioned, I pretty much just extracted the Edge reloaded workflow and did 
   deps.edn (1) --> user.clj (2) --> nrepl.clj (3) --> edge.rebel.main (4) --> dev.clj (5)
   ```
 
-  * [deps.edn](https://github.com/juxt/edge/blob/master/app/deps.edn) specifically, they are running `:dev`, `build`, `:dev/rebel`, `:dev/nrepl` and `:dev/cljs`. Things to keep in mind is that running these expands whats on the classpath. This expansion is what allows `user.clj` and `:dev/nrepl` to be called and do their thing (read points 2 and 3) and than start the main repl script (read point 4)
+  * [deps.edn](https://github.com/juxt/edge/blob/master/app/deps.edn) specifically, they are running `:dev`, `build`, `:dev/rebel`, `:dev/nrepl` and `:dev/cljs`. Things to keep in mind is that running these expands whats on the classpath. This expansion is what allows `user.clj` and `:dev/nrepl` to be called and do their thing (see `user.clj` and `nrepl.clj`) and than start the `edge.rebel.main` script
   * [user.clj](https://github.com/juxt/edge/blob/master/app/dev/user.clj) is automatically imported when its on the classpath. So this guy just loads itself and in doing so requires `nrepl.clj`
-  * [nrepl](https://github.com/juxt/edge/blob/master/app/aliases/nrepl/nrepl.clj) automatically starts a `nrepl-server`. This automatic chain of events stops now.
+  * [nrepl](https://github.com/juxt/edge/blob/master/app/aliases/nrepl/nrepl.clj) automatically starts a `nrepl-server`. After this, there are no more "automagic" chain of events
   * [edge.rebel.main](https://github.com/juxt/edge/blob/master/app/aliases/rebel/edge/rebel/main.clj) has a main function which, when called, requires the `dev.clj` ns and drops you into it. Which leads us to the next point.
   * [dev.clj](https://github.com/juxt/edge/blob/master/app/dev/dev.clj) This ns starts by setting up integrant by passing it your `config.edn`.
 
@@ -87,7 +87,7 @@ The above seemed challenging to me at first because, like Clojure in general, yo
 
 I also want to point out that this is not the only way to set up a workflow like this. This one felt like it was "jumping around" a bit. But that is not so much the case as it feels that Edge has design goals they are trying to achieve and when viewed as a part of the whole of "Edge" and where this project fits into Juxt, it starts to make sense.
 
-Final note, if you are wondering about the `dev` function in `dev.clj`. I believe this is there as a util type function to quickly get your repl experience to where you need it to be.
+Final note, if you are wondering about the `dev` function in `dev.clj`. I believe this is there as a util function to quickly get your repl experience to where you need it to be.
 
 ### user.clj
 
