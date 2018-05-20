@@ -27,5 +27,5 @@ This project will not teach you how to use the libraries. I will provide context
 
 I would recommend reading through this project in the following order:
 
-* [Web Server]()
-* [Web Server Reloaded]()
+* [Web Server](https://github.com/tkjone/reveng-edge/tree/master/web-server)
+* [Web Server Reloaded](https://github.com/tkjone/reveng-edge/tree/master/web-server-reloaded)

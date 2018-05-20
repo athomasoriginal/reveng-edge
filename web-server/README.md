@@ -1,6 +1,12 @@
 # Web Server
 
-A good starting point of Edge to breakout is the Hello World Web Server because it introduces a simple web server and the basics of implementing a "system". In this section get to see how `Aero`, `Integrant`, `Yada` and `Logging` can be setup in a simple, but "realistic" manner.
+Start with the Hello World Web Server because it introduces a simple web server and the basics of implementing a "system". This project will show how to setup:
+
+* Project Organization
+* Configuration File - [Aero](https://github.com/juxt/aero)
+* System - [Integrant](https://github.com/weavejester/integrant)
+* Server - [Yada](https://github.com/juxt/yada)
+* Logging - [tools.logging](https://github.com/clojure/tools.logging)
 
 ## Quick Start
 
