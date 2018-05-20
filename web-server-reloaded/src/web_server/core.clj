@@ -11,7 +11,7 @@
 
 
 (defn route []
-  ["/hello" (yada/handler "Hello World!\n")])
+  ["/hello" (yada/handler "Hello World -- I win!\n")])
 
 
 ;; Web Server Integrant Lifecycle Methods

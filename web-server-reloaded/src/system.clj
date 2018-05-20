@@ -21,6 +21,6 @@
 (defn new-system
   "Construct a new system, configured with the given profile"
   [profile]
-  (let [res (config profile)]
+  (let [res (:ig/system (config profile))]
     (ig/load-namespaces res)
     res))

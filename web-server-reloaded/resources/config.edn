@@ -1,4 +1,4 @@
-;; hello-world system configuration
+;; web-server system configuration
 
 {:web-server/core
  #profile

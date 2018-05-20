@@ -1,2 +1,2 @@
 serve:
-	clj -m start
+	clj -A:dev:build:dev/rebel:dev/nrepl
