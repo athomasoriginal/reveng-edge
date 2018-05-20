@@ -1,4 +1,4 @@
-# Edge "Reverse Engineered"
+# Edge "reverse engineered"
 
 ## Introduction
 
