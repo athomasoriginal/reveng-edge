@@ -7,7 +7,7 @@
    [clojure.repl :refer [apropos dir doc find-doc pst source]]
    [system :as web-server-system]
    [integrant.repl :refer [clear halt prep init reset reset-all]]
-   [integrant.repl.state :refer [system]]
+   [integrant.repl.state :refer [system config]]
    web-server.reload
    [io.aviso.ansi]))
 
@@ -18,8 +18,8 @@
 (defn go []
   (let [res (integrant.repl/go)]
     (println (io.aviso.ansi/yellow
-               (format "[Edge] Website can be browsed at http://%s/"
-                       (-> system :web-server/core :host))))
+               (format "[Edge] Website can be browsed at http://%s"
+                       (get-in config [:web-server/core :web-server.core/entry]))))
     (println (io.aviso.ansi/bold-yellow "[Edge] Now make code changes, then enter (reset) here"))
     res))
 
