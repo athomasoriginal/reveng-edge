@@ -23,7 +23,9 @@ This project aims to breakdown and discuss the different parts of the [Edge](htt
 
 This project will not teach you how to use the libraries. I will provide context, explain them a little and provide some alternatives. However, teaching each of them is not the goal.
 
-## Table of Contents
+## Learning Path
+
+I would recommend reading through this project in the following order:
 
 * [Web Server]()
 * [Web Server Reloaded]()
