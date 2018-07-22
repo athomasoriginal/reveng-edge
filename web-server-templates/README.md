@@ -1,30 +1,32 @@
 # Web Server Templates
 
-With traditions SSR web apps, templating was always a big selling point of Web Frameworks. In this setup, we show how to add templating.
+In this third instalment we are building upon the [Web Server Reloaded](https://github.com/tkjone/reveng-edge/tree/master/web-server-reloaded) project by showing how Edge put together a SSR web app. The big feature here is adding `Templating`, which is a big selling point of Web Frameworks.
 
 ## Quick Start
 
-* Install Clojure
+- Install Clojure
 
   See the [Clojure Install Guide](https://clojure.org/guides/getting_started)
 
-* Start the web server
+- Start the web server
 
   ```bash
   make serve
   ```
 
-* Visit the terminal and start the reloaded workflow
+- Visit the terminal and start the reloaded workflow
 
   ```bash
   web-server.dev=> (go)
   ```
 
-* Visit the app
+- Visit the app
 
   http://localhost:3001/phonebook-app
 
 ## Learnings
+
+- [Templating Engine](#templating-engine)
 
 ### Templating Engine
 
