@@ -2,14 +2,16 @@
 
 ## Introduction
 
-For newcomers to Clojure, one of the big questions is "How do I build a web app?". In Clojure, there are no frameworks like Django, Rails or Express. There are libraries which you piece together. Okay, so which libraries should I use and when? What are the best practices? How should I organize my code? To put it another way: What does a Clojure web app look like?
+For newcomers to Clojure, one of the big questions is "How do I build a web app?". In Clojure, there are no frameworks like Django, Rails or Express. There are libraries which you piece together. Okay, so which libraries should I use and when? What are the best practices? How should I organize my code?
 
 In answer to this, [Juxt](https://juxt.pro/index.html) created [Edge](https://github.com/juxt/edge). Edge is an example web app meant to show new Clojure developers what a modern, production ready Clojure app looks like. It illustrates:
 
-- Web API
-- SSR
-- SPA
-- Graphql
+- Web Server
+- Web Server + Reloaded Workflow
+- Web Server + REST API
+- Web Server + Graphql API
+- Web App - SSR
+- Web App - SPA
 - Event Systems
 - Modern Clojure Development Workflow
 
