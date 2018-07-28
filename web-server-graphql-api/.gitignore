@@ -1,0 +1,13 @@
+/resources/js
+/target
+.cpcache
+.nrepl-port
+figwheel_server.log
+uberjar.jar
+
+# ignore osx stuffs
+.DS_Store
+
+# ignore graphiql build
+resources/public/graphiql/graphiql.*
+resources/public/graphiql/node_modules

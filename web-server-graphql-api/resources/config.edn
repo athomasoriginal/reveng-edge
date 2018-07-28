@@ -1,0 +1,10 @@
+;; web-server system configuration
+
+{:web-server/core
+ #profile
+ {:dev {:web-server.core/host "localhost:3001"
+        :web-server.core/entry "localhost:3001/graphql"
+        :web-server.core/port 3001}}
+
+ :ig/system
+ {:web-server/core #merge [#ref [:web-server/core]]}}
