@@ -2,12 +2,6 @@
 
 This is the fourth instalment we are building upon the [Web Server Reloaded](https://github.com/tkjone/reveng-edge/tree/master/web-server-reloaded) project. This is an example of what it would look like to build web api for an application using the Edge system.
 
-NOTES:
-
-TODO: go through the express API's and try to see if we can follow one of the good ones here.
-
-TODO: turn some stuff into variables - host and basepath
-
 ## Notes on Style
 
 I have included my routes in the `core.clj` file. This is fine when we are working on small, demo apps, but it is a good idea to separate these out when the app scales. For now though, it will all be easier to reason about if its in the same file.
