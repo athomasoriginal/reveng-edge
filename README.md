@@ -10,6 +10,8 @@ In answer to this, [Juxt](https://juxt.pro/index.html) created [Edge](https://gi
 - Web Server + Reloaded Workflow
 - Web Server + REST API
 - Web Server + Graphql API
+- Web Server + DB
+- Web Server + authentication
 - Web App - SSR
 - Web App - SPA
 - Event Systems
@@ -33,3 +35,4 @@ I would recommend reading through this project in the following order:
 - [Web Server Reloaded](https://github.com/tkjone/reveng-edge/tree/master/web-server-reloaded)
 - [Web Server Templates](https://github.com/tkjone/reveng-edge/tree/master/web-server-templates)
 - [Web Server API](https://github.com/tkjone/reveng-edge/tree/master/web-server-api)
+- [Web Server Graphql API](https://github.com/tkjone/reveng-edge/tree/master/web-server-graphql-api)
