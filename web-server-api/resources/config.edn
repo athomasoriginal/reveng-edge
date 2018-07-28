@@ -3,7 +3,7 @@
 {:web-server/core
  #profile
  {:dev {:web-server.core/host "localhost:3001"
-        :web-server.core/entry "localhost:3001/hello"
+        :web-server.core/entry "localhost:3001/phonebook-api"
         :web-server.core/port 3001}}
 
  :ig/system
