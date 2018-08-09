@@ -36,3 +36,4 @@ I would recommend reading through this project in the following order:
 - [Web Server Templates](https://github.com/tkjone/reveng-edge/tree/master/web-server-templates)
 - [Web Server API](https://github.com/tkjone/reveng-edge/tree/master/web-server-api)
 - [Web Server Graphql API](https://github.com/tkjone/reveng-edge/tree/master/web-server-graphql-api)
+- [Web Server SPA](https://github.com/tkjone/reveng-edge/tree/master/web-server-spa)
