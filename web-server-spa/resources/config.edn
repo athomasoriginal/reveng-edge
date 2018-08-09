@@ -1,0 +1,17 @@
+;; web-server system configuration
+
+{:web-server/core
+ #profile
+ {:dev {:web-server.core/host "localhost:3001"
+        :web-server.core/entry "localhost:3001/phonebook-app"
+        :web-server.core/port 3001}
+
+  :web-server/selmer
+  {:web-server.selmer/template-caching?
+   #profile
+   {:dev false
+    :prod true}}}
+
+ :ig/system
+ {:web-server/core #merge [#ref [:web-server/core]]
+  :web-server/selmer nil}}
