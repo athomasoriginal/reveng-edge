@@ -28,7 +28,7 @@ This project will not teach you how to use the libraries. I will provide context
 
 ## Learning Path
 
-I would recommend reading through this project in the following order:
+Each sub-dir in this repo builds on the one before it. Follow along in this order:
 
 - [Web Server](https://github.com/tkjone/reveng-edge/tree/master/web-server)
 - [Web Server Reloaded](https://github.com/tkjone/reveng-edge/tree/master/web-server-reloaded)
