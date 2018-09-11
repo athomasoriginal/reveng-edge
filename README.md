@@ -2,22 +2,21 @@
 
 ## Introduction
 
-For newcomers to Clojure, one of the big questions is "How do I build a web app?". In Clojure, there are no frameworks like Django, Rails or Express. There are libraries which you piece together. Okay, so which libraries should I use and when? What are the best practices? How should I organize my code?
+For newcomers to Clojure, a common question is "How do I build a web app?". In Clojure, there are no frameworks like Django, Rails or Express. There are libraries which you piece together. Okay, so which libraries should I use and when? What are the best practices? How should I organize my code?
 
-In answer to this, [Juxt](https://juxt.pro/index.html) created [Edge](https://github.com/juxt/edge). Edge is an example web app meant to show new Clojure developers what a modern, production ready Clojure app looks like. It illustrates:
+In answer to this, [Juxt](https://juxt.pro/index.html) created [Edge](https://github.com/juxt/edge). Edge is an example web app meant to show new Clojure developers what a modern, production ready Clojure app looks like. It show what the following would look like:
 
 - Web Server
-- Web Server + Reloaded Workflow
+- Web Server + Reloaded Workflow (Modern Clojure Development Workflow)
 - Web Server + REST API
 - Web Server + Graphql API
 - Web Server + DB
 - Web Server + authentication
-- Web App - SSR
-- Web App - SPA
-- Event Systems
-- Modern Clojure Development Workflow
+- web server + SSR Templates
+- web server + SPA
+- web server + Event Systems
 
-This is a great learning tool. But this learning tool also has a lot going on. For example, what if you only want to create a SPA? You need a server and some HTML. Do you really need everything else? Okay, so what, at a minimum do I need?
+This is a great learning tool. But there is also a lot going on. For example, what if you only want to create a SPA? You need a server and some HTML. Do you really need everything else? Okay, so what, at a minimum do I need?
 
 **What this is**
 
@@ -33,7 +32,7 @@ I would recommend reading through this project in the following order:
 
 - [Web Server](https://github.com/tkjone/reveng-edge/tree/master/web-server)
 - [Web Server Reloaded](https://github.com/tkjone/reveng-edge/tree/master/web-server-reloaded)
-- [Web Server Templates](https://github.com/tkjone/reveng-edge/tree/master/web-server-templates)
-- [Web Server API](https://github.com/tkjone/reveng-edge/tree/master/web-server-api)
+- [Web Server SSR Templates](https://github.com/tkjone/reveng-edge/tree/master/web-server-templates)
+- [Web Server REST API](https://github.com/tkjone/reveng-edge/tree/master/web-server-rest-api)
 - [Web Server Graphql API](https://github.com/tkjone/reveng-edge/tree/master/web-server-graphql-api)
 - [Web Server SPA](https://github.com/tkjone/reveng-edge/tree/master/web-server-spa)
